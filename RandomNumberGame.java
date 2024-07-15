@@ -13,7 +13,7 @@ public class RandomNumberGame{
     int count=10;
 
     do{
-        System.out.println("Guess the number(1-100)("+count+" chances left)");
+        System.out.println("Guess the number(0-100)("+count+" chances left)");
         usernumber = input.nextInt();
 
         if(usernumber == mynumber)
@@ -25,13 +25,13 @@ public class RandomNumberGame{
 
         else if( usernumber > mynumber)
         {
-        System.out.println("Number Entered is larger");
+        System.out.println( mynumber + "is larger");
         }
 
 
         else
         {
-            System.out.println("Number Entered is smaller");
+            System.out.println( mynumber + "is smaller");
         }
         count--;
 
